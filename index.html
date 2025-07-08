@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Bookstore - Home</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .header, .footer {
+      height: 80px;
+      background-color: #007bff;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      display: flex;
+      height: calc(100vh - 160px);
+    }
+    .menu {
+      width: 20%;
+      background-color: #f0f0f0;
+    }
+    .main {
+      width: 80%;
+      border-left: 1px solid #ccc;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Online Bookstore</h1>
+  </div>
+
+  <div class="container">
+    <div class="menu">
+      <iframe src="menu.html"></iframe>
+    </div>
+    <div class="main">
+      <iframe src="welcome.html" name="main-content"></iframe>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Online Bookstore</p>
+  </div>
+
+</body>
+</html>
